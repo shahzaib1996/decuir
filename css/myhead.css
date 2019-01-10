@@ -1,0 +1,45 @@
+h3.text-center{
+  font-size:0.75em;
+  font-weight:bold;
+  font-family: sans-serif;
+  text-align: left;
+  margin-top: 0em;
+  color:#575757;
+}
+div.fixedcap {
+  height: 110px;
+}
+
+p#popular{
+  padding-left:0.2px;
+  padding-right:0.2px;
+  padding-top:1em;
+  font-size:0.8em;
+  font-family:sans-serif;
+  text-align: left;
+  color: #000;
+}
+
+img.fixedheight{
+  height:150px;
+}
+img.fixedheightsi{
+  height:150px;
+}
+
+h1.popprotext{
+  font-size:1.6em;
+  margin-bottom:-10px;
+  font-family: sans-serif;
+  color: #222222;
+}
+div.prodcont {
+	border-top: 2px solid #f68b1e;
+	margin-top: 2em;
+	background: #fff;
+}
+div.prodhead {
+	margin-top: -0.5em;
+	border: 0px;
+	margin-bottom: 0.6em;
+}

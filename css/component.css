@@ -1,0 +1,178 @@
+div.main {
+	background: #ECEAE0;
+	margin-bottom: 20px;
+}
+.cbp-hrmenu {
+	width: 100%;
+	margin-top: 0px;
+	/*border-bottom: 3px solid #1e9382; blue */
+	border-bottom: 3px solid #E9633B;
+	background: ;
+}
+
+/* general ul style */
+.cbp-hrmenu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/* first level ul style */
+.cbp-hrmenu > ul,
+.cbp-hrmenu .cbp-hrsub-inner {
+	width: 100%;
+	max-width: 90em;
+	margin: 0;
+	padding: 0 1.875em;
+	background: ;
+}
+
+.cbp-hrmenu > ul > li {
+	display: inline-block;
+	outline: 0px;
+}
+
+.cbp-hrmenu > ul > li > a {
+	font-weight: bold;
+	font-size: 14px;
+	padding: 0.5em 2.5em;
+	color: #999;
+	display: inline-block;
+	text-decoration: none;
+	outline: 0px;
+}
+
+.cbp-hrmenu > ul > li > a:hover {
+	color: #464646;
+}
+
+.cbp-hrmenu > ul > li.cbp-hropen a.catehead,
+.cbp-hrmenu > ul > li.cbp-hropen > a.catehead:hover {
+	color: #E9633B;
+	/*color: !important;*/
+	background: #ECEAE0;
+	opacity: 0.8;
+}
+
+.cbp-hrmenu > ul > li.cbp-hropen ul.mycsh li a,
+.cbp-hrmenu > ul > li.cbp-hropen > ul.mycsh li a:hover {
+	color: #575757;
+	background: #ECEAE0;
+	opacity: 0.8;
+	font-weight: 200;
+	font-size: 0.9em;
+}
+
+/* sub-menu */
+.cbp-hrmenu .cbp-hrsub {
+	display: none;
+	position: absolute;
+	z-index:99;
+	background: #ECEAE0;
+	border:1px solid #eee; /*Category drop down border*/
+	width: 100%;
+	left: 0;
+}
+
+.cbp-hropen .cbp-hrsub {
+	display: block;
+	padding-bottom: 2em;
+	/*border-bottom: 4px solid #1e9382; blue */
+	border-bottom: 3px solid #E9633B;
+	border-top: 2px solid #E9633B;
+	background: #ECEAE0;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner > div {
+	width: 33%;
+	float: left;
+	padding: 0 2em 0;
+}
+a#export {
+	right: 0px;
+	padding: 0px !important;
+	float:right;
+	margin-right: -30px;
+}
+.cbp-hrmenu .cbp-hrsub-inner:before,
+.cbp-hrmenu .cbp-hrsub-inner:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner:after {
+	clear: both;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner > div a {
+	line-height: 1em; /*Category submenu text */
+}
+
+.cbp-hrsub h4 {
+	/*color: #1e1e1e;*/
+	color: #221E1D;
+	padding: 1em 0 0.6em; 
+	margin: 0;
+	font-size: 140%;
+	font-weight: 300;
+}
+
+
+/* Examples for media queries */
+
+@media screen and (max-width: 52.75em) { 
+
+	.cbp-hrmenu {
+		font-size: 80%;
+	}
+
+}
+
+@media screen and (max-width: 43em) { 
+
+	.cbp-hrmenu {
+		font-size: 120%;
+		border: none;
+	}
+
+	.cbp-hrmenu > ul,
+	.cbp-hrmenu .cbp-hrsub-inner {
+		width: 100%;
+		padding: 0;
+	}
+
+	.cbp-hrmenu .cbp-hrsub-inner {
+		padding: 0 2em;
+		font-size: 75%;
+	}
+
+	.cbp-hrmenu > ul > li {
+		display: block;
+		border-bottom: 1px solid #eee;
+	}
+
+	.cbp-hrmenu > ul > li > a { 
+		display: block;
+		padding: 1em 3em;
+	}
+
+	.cbp-hrmenu .cbp-hrsub { 
+		position: relative;
+	}
+
+	.cbp-hrsub h4 {
+		padding-top: 0.6em;
+	}
+
+}
+
+@media screen and (max-width: 36em) { 
+	.cbp-hrmenu .cbp-hrsub-inner > div {
+		width: 100%;
+		float: none;
+		padding: 0 2em;
+	}
+}
+
+
+
